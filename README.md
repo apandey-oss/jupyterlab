@@ -22,5 +22,5 @@ docker run -d \
     -p 127.0.0.1:8888:8888 \
     --name my-lab \
     --restart always \
-    ghcr.io/amitpandey-io/jupyterlab:latest --NotebookApp.password='<encrypted password>'
+    ghcr.io/apandey-oss/jupyterlab:latest --NotebookApp.password='<encrypted password>'
 ```
