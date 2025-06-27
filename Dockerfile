@@ -1,5 +1,5 @@
-# FROM quay.io/jupyter/all-spark-notebook:ubuntu-24.04
-FROM quay.io/jupyter/datascience-notebook:ubuntu-24.04
+FROM quay.io/jupyter/all-spark-notebook:ubuntu-24.04
+# FROM quay.io/jupyter/datascience-notebook:ubuntu-24.04
 
 USER root
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
