@@ -13,5 +13,5 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash 
 RUN mkdir /home/jovyan/notebooks && chown -R jovyan /home/jovyan/notebooks
 
 USER jovyan
-RUN pip install --no-cache-dir --user duckdb "polars[all]"
+RUN pip install --no-cache-dir --user duckdb "polars[all]" vegafusion[embed] hvplot plotnine great_tables
 ENTRYPOINT [ "start-notebook.py" ]
