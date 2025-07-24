@@ -15,5 +15,5 @@ RUN mkdir /home/jovyan/notebooks && chown -R jovyan /home/jovyan/notebooks
 
 USER jovyan
 ENV JUPYTER_TOKEN='' JUPYTER_ENABLE_LAB=yes UV_LINK_MODE=copy
-RUN pip install --no-cache-dir --user dask duckdb "polars[all]" vegafusion[embed] hvplot plotnine great_tables tensorflow torch tensorflow
+RUN pip install --no-cache-dir --user dask duckdb "polars[all]" vegafusion[embed] hvplot plotnine great_tables tensorflow torch
 ENTRYPOINT [ "start-notebook.py" ]
